@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,14 +13,11 @@
 
 <body>
 
-
     <header class="topo">
-
         <a href="#" class="marca">
             <div class="logo-slot">
                 <img src="imagens/Logo.png" alt="Logo GV Imports">
             </div>
-
             <span>GV <strong>IMPORTS</strong></span>
         </a>
 
@@ -29,13 +25,10 @@
             <a href="#tenis" class="nav-link">Coleção</a>
             <a href="#contatos" class="nav-btn">Fazer pedido</a>
         </nav>
-
     </header>
 
     <section class="hero">
-
         <div class="hero-conteudo">
-
             <h1>
                 Seu estilo merece
                 <span>algo extraordinário.</span>
@@ -48,52 +41,40 @@
             </p>
 
             <div class="hero-botoes">
-
                 <a href="#tenis" class="btn-principal">
                     Explorar coleção
                     <span>↗</span>
                 </a>
-
                 <a href="#contatos" class="btn-secundario">
                     Faça seu pedido
                 </a>
-
             </div>
 
             <div class="hero-info">
-
                 <div>
                     <strong>Estilo</strong>
                     <span>Para todos os momentos</span>
                 </div>
-
                 <div>
                     <strong>Variedade</strong>
                     <span>Modelos selecionados</span>
                 </div>
-
                 <div>
                     <strong>Atendimento</strong>
                     <span>Direto pelo WhatsApp</span>
                 </div>
-
             </div>
-
         </div>
 
         <div class="hero-visual">
-
             <div class="hero-brilho"></div>
-
             <div class="hero-destaque">
                 <span>GV IMPORTS</span>
                 <h2>ALAVANQUE<br>SEU ESTILO.</h2>
                 <p>O próximo passo do seu estilo começa aqui.</p>
                 <div class="hero-linha"></div>
             </div>
-
         </div>
-
     </section>
 
     <main class="wrap" id="tenis">
@@ -101,20 +82,52 @@
             <div>
                 <span class="subtitulo">ENCONTRE SEU ESTILO</span>
                 <h2>Nossa coleção<span>.</span></h2>
-                <p>
-                    Explore nossos modelos e encontre aquele que combina
-                    com você.
-                </p>
+                <p>Escolha uma linha para ver todos os modelos.</p>
             </div>
             <div class="colecao-selo">
                 GV <span>IMPORTS</span>
             </div>
         </div>
 
-        <section class="categoria">
+        <!-- CAPAS DAS LINHAS (aparecem primeiro) -->
+        <div class="capas" id="capas">
+            <button type="button" class="capa" data-alvo="linha-nike-sb">
+                <img src="imagens/NikeSBTwistPanda.png" alt="">
+                <div class="capa-info">
+                    <h3>Nike SB Twist</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+
+            <button type="button" class="capa" data-alvo="linha-louis-vuitton">
+                <img src="imagens/LouisVuittonSkatePretoBranco.png" alt="">
+                <div class="capa-info">
+                    <h3>Louis Vuitton</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+
+            <button type="button" class="capa" data-alvo="linha-mcqueen">
+                <img src="imagens/AlexanderMcQueenBlackWhite.png" alt="">
+                <div class="capa-info">
+                    <h3>Alexander McQueen</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+
+            <button type="button" class="capa" data-alvo="linha-airmax">
+                <img src="imagens/AirmaxPlusTN1.png" alt="">
+                <div class="capa-info">
+                    <h3>AirMax</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+        </div>
+
+        <section class="categoria" id="linha-nike-sb" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
             <div class="categoria-titulo">
                 <h2>Nike SB Twist</h2>
-                <span>01 / COLEÇÃO</span>
             </div>
             <div class="grid">
                 <article class="card">
@@ -162,10 +175,10 @@
             </div>
         </section>
 
-        <section class="categoria">
+        <section class="categoria" id="linha-louis-vuitton" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
             <div class="categoria-titulo">
                 <h2>Louis Vuitton</h2>
-                <span>02 / COLEÇÃO</span>
             </div>
             <div class="grid">
                 <article class="card">
@@ -213,15 +226,12 @@
             </div>
         </section>
 
-        <section class="categoria">
-
+        <section class="categoria" id="linha-mcqueen" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
             <div class="categoria-titulo">
                 <h2>Alexander McQueen</h2>
-                <span>03 / COLEÇÃO</span>
             </div>
-
             <div class="grid">
-
                 <article class="card">
                     <img src="imagens/AlexanderMcQueenBlackWhite.png" alt="Alexander McQueen Black and White">
                     <div class="info">
@@ -229,7 +239,6 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="imagens/AlexanderMcQueenWhite.png" alt="Alexander McQueen White">
                     <div class="info">
@@ -237,20 +246,15 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
             </div>
-
         </section>
 
-        <section class="categoria">
-
+        <section class="categoria" id="linha-airmax" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
             <div class="categoria-titulo">
                 <h2>AirMax</h2>
-                <span>04 / COLEÇÃO</span>
             </div>
-
             <div class="grid">
-
                 <article class="card">
                     <img src="imagens/AirmaxPlusTN1.png" alt="AirMax Plus TN1">
                     <div class="info">
@@ -258,7 +262,6 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="imagens/AirmaxPlusTN3.png" alt="AirMax Plus TN3">
                     <div class="info">
@@ -266,7 +269,6 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="imagens/AirmaxDN.png" alt="AirMax DN">
                     <div class="info">
@@ -274,7 +276,6 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="imagens/Airmax95.png" alt="AirMax 95">
                     <div class="info">
@@ -282,20 +283,14 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
             </div>
-
         </section>
 
-        <section class="categoria">
-
+        <section class="categoria categoria-fixa" id="linha-outros">
             <div class="categoria-titulo">
                 <h2>Outros modelos</h2>
-                <span>05 / COLEÇÃO</span>
             </div>
-
             <div class="grid">
-
                 <article class="card">
                     <img src="imagens/AirForce.png" alt="Air Force">
                     <div class="info">
@@ -303,7 +298,6 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="imagens/AsicsGelNYC.png" alt="Asics Gel NYC">
                     <div class="info">
@@ -311,7 +305,6 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="imagens/Mizuno.png" alt="Mizuno">
                     <div class="info">
@@ -319,7 +312,6 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
-
                 <article class="card">
                     <img src="imagens/ShoxTL.png" alt="Shox TL">
                     <div class="info">
@@ -330,59 +322,17 @@
             </div>
         </section>
     </main>
+
     <footer id="contatos">
         <div class="pedido-conteudo">
             <span class="subtitulo">SEU PRÓXIMO PASSO</span>
             <h2>Encontrou seu modelo?</h2>
-            <p>Escolha seu tênis, informe o tamanho e envie seu pedido.Nosso atendimento será feito diretamente pelo WhatsApp,de forma simples e prática.</p>
-            <form class="pedido" id="formPedido">
-                <div class="campos">
-                    <div class="campo">
-                        <label for="modelo">Modelo desejado</label>
-                        <select id="modelo" required>
-                            <option value="" disabled selected>Selecione um modelo</option>
-                            <option>Nike SB Twist Panda</option>
-                            <option>Nike SB Twist Night</option>
-                            <option>Nike SB Twist Triple White</option>
-                            <option>Nike SB Twist Gray</option>
-                            <option>Nike SB Twist Black and White</option>
-                            <option>Nike SB Twist Green Tongue</option>
-                            <option>Louis Vuitton Skate Roxo</option>
-                            <option>Louis Vuitton Skate Preto e Branco</option>
-                            <option>Louis Vuitton Skate Branco e Preto</option>
-                            <option>Louis Vuitton Skate Branco e Cinza</option>
-                            <option>Louis Vuitton Skate Bege e Branco</option>
-                            <option>Louis Vuitton Skate Azul e Branco</option>
-                            <option>Alexander McQueen Black and White</option>
-                            <option>Alexander McQueen White</option>
-                            <option>AirMax Plus TN1</option>
-                            <option>AirMax Plus TN3</option>
-                            <option>AirMax DN</option>
-                            <option>AirMax 95</option>
-                            <option>Air Force</option>
-                            <option>Asics Gel NYC</option>
-                            <option>Mizuno</option>
-                            <option>Shox TL</option>
-                        </select>
-                    </div>
+            <p>Escolha seus tênis, informe o tamanho de cada um e envie seu pedido. Nosso atendimento será feito diretamente pelo WhatsApp, de forma simples e prática.</p>
 
-                    <div class="campo">
-                        <label for="tamanho">Tamanho</label>
-                        <select id="tamanho" required>
-                            <option value="" disabled selected>Selecione o tamanho</option>
-                            <option>36</option>
-                            <option>37</option>
-                            <option>38</option>
-                            <option>39</option>
-                            <option>40</option>
-                            <option>41</option>
-                            <option>42</option>
-                            <option>43</option>
-                            <option>44</option>
-                            <option>45</option>
-                        </select>
-                    </div>
-                </div>
+            <form class="pedido" id="formPedido">
+                <div class="itens" id="itens"></div>
+
+                <button type="button" class="btn-add" id="btnAdd">+ Adicionar outro tênis</button>
 
                 <div class="acao">
                     <button class="btn-enviar" type="submit">
@@ -393,9 +343,7 @@
             </form>
         </div>
 
-
         <div class="rodape">
-
             <a href="#" class="marca">
                 <div class="logo-slot">
                     <img src="imagens/Logo.png" alt="GV Imports">
@@ -408,6 +356,7 @@
             </span>
         </div>
     </footer>
+
 <script src="script.js"></script>
 </body>
 </html>

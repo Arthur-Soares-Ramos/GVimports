@@ -823,3 +823,393 @@ footer {
     }
 
 }
+
+[hidden] {
+    display: none !important;
+}
+
+.capas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.capa {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    background: var(--card);
+
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+
+    transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+
+.capa:hover,
+.capa:focus-visible {
+    transform: translateY(-7px);
+    border-color: var(--neon);
+    box-shadow: 0 12px 35px rgba(176, 38, 255, .18);
+    outline: none;
+}
+
+.capa img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
+    background: #171020;
+    transition: transform .4s;
+}
+
+.capa:hover img {
+    transform: scale(1.04);
+}
+
+.capa-info {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 60px 18px 18px;
+
+    background: linear-gradient(to top, rgba(7, 5, 11, .96) 25%, transparent);
+}
+
+.capa-info h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.capa-qtd {
+    margin-top: 4px;
+    color: var(--neon-soft);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.voltar {
+    margin-bottom: 22px;
+    padding: 10px 18px;
+
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    background: transparent;
+
+    color: var(--neon-soft);
+    font: inherit;
+    font-size: .85rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.voltar:hover {
+    border-color: var(--neon);
+    box-shadow: 0 0 15px rgba(176, 38, 255, .25);
+}
+
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.item-pedido {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #0b0814;
+}
+
+.item-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.item-titulo {
+    color: white;
+    font-size: .85rem;
+    font-weight: 800;
+}
+
+.btn-remover {
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: transparent;
+
+    color: var(--muted);
+    font: inherit;
+    font-size: .72rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-remover:hover {
+    border-color: #ff5d7a;
+    color: #ff5d7a;
+}
+
+.btn-add {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+
+    border: 1px dashed var(--neon);
+    border-radius: 9px;
+    background: rgba(176, 38, 255, .06);
+
+    color: var(--neon-soft);
+    font: inherit;
+    font-size: .88rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-add:hover:not(:disabled) {
+    background: rgba(176, 38, 255, .14);
+}
+
+.btn-add:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .capas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .capa {
+        border-radius: 11px;
+    }
+    .capa-info {
+        padding: 40px 10px 12px;
+    }
+    .capa-info h3 {
+        font-size: .95rem;
+    }
+    .capa-qtd {
+        font-size: .7rem;
+    }
+    .item-pedido {
+        padding: 14px 12px;
+    }
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.capas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.capa {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    background: var(--card);
+
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+
+    transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+
+.capa:hover,
+.capa:focus-visible {
+    transform: translateY(-7px);
+    border-color: var(--neon);
+    box-shadow: 0 12px 35px rgba(176, 38, 255, .18);
+    outline: none;
+}
+
+.capa img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
+    background: #171020;
+    transition: transform .4s;
+}
+
+.capa:hover img {
+    transform: scale(1.04);
+}
+
+.capa-info {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 60px 18px 18px;
+
+    background: linear-gradient(to top, rgba(7, 5, 11, .96) 25%, transparent);
+}
+
+.capa-info h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.capa-qtd {
+    margin-top: 4px;
+    color: var(--neon-soft);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.voltar {
+    margin-bottom: 22px;
+    padding: 10px 18px;
+
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    background: transparent;
+
+    color: var(--neon-soft);
+    font: inherit;
+    font-size: .85rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.voltar:hover {
+    border-color: var(--neon);
+    box-shadow: 0 0 15px rgba(176, 38, 255, .25);
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.item-pedido {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #0b0814;
+}
+
+.item-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.item-titulo {
+    color: white;
+    font-size: .85rem;
+    font-weight: 800;
+}
+
+.btn-remover {
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: transparent;
+
+    color: var(--muted);
+    font: inherit;
+    font-size: .72rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-remover:hover {
+    border-color: #ff5d7a;
+    color: #ff5d7a;
+}
+
+.btn-add {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+
+    border: 1px dashed var(--neon);
+    border-radius: 9px;
+    background: rgba(176, 38, 255, .06);
+
+    color: var(--neon-soft);
+    font: inherit;
+    font-size: .88rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-add:hover:not(:disabled) {
+    background: rgba(176, 38, 255, .14);
+}
+
+.btn-add:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .capas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .capa {
+        border-radius: 11px;
+    }
+    .capa-info {
+        padding: 40px 10px 12px;
+    }
+    .capa-info h3 {
+        font-size: .95rem;
+    }
+    .capa-qtd {
+        font-size: .7rem;
+    }
+    .item-pedido {
+        padding: 14px 12px;
+    }
+}
+
+.campo-tamanho {
+    grid-column: 1 / -1;
+}
+
+.campo select:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
