@@ -1,4 +1,4 @@
-var NUMERO_WHATSAPP = "5534996398705";
+var NUMERO_WHATSAPP = "5534988974838";
 
 var capas = document.getElementById("capas");
 var linhas = document.querySelectorAll(".categoria");               
