@@ -38,7 +38,6 @@ function fecharLinhas() {
 var TAMANHOS = [36, 37, 38, 39, 40, 41, 42, 43, 44, 45];
 var MAX_ITENS = 10;
 
-// Linhas e modelos lidos da própria coleção do site
 var LINHAS = Array.prototype.map.call(linhas, function (sec) {
   return {
     nome: sec.querySelector(".categoria-titulo h2").textContent.trim(),
@@ -117,7 +116,6 @@ function adicionarItem() {
   selModelo.disabled = true;
   preencherSelect(selTamanho, "Selecione o tamanho", TAMANHOS);
 
-  // Ao escolher a linha, libera só os modelos dela
   selLinha.addEventListener("change", function () {
     var linha = LINHAS.filter(function (l) { return l.nome === selLinha.value; })[0];
     preencherSelect(selModelo, "Selecione o modelo", linha ? linha.modelos : []);
