@@ -88,8 +88,6 @@
                 GV <span>IMPORTS</span>
             </div>
         </div>
-
-        <!-- CAPAS DAS LINHAS (aparecem primeiro) -->
         <div class="capas" id="capas">
             <button type="button" class="capa" data-alvo="linha-nike-sb">
                 <img src="imagens/NikeSBTwistPanda.png" alt="">
@@ -119,6 +117,34 @@
                 <img src="imagens/AirmaxPlusTN1.png" alt="">
                 <div class="capa-info">
                     <h3>AirMax</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+            <button type="button" class="capa" data-alvo="linha-airforce">
+                <img src="imagens/AirForce.png" alt="">
+                <div class="capa-info">
+                    <h3>Air Force</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+            <button type="button" class="capa" data-alvo="linha-asics">
+                <img src="imagens/AsicsGelNYC.png" alt="">
+                <div class="capa-info">
+                    <h3>Asisc Gel NYC</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+            <button type="button" class="capa" data-alvo="linha-mizuno">
+                <img src="imagens/Mizuno.png" alt="">
+                <div class="capa-info">
+                    <h3>Mizuno</h3>
+                    <p class="capa-qtd"></p>
+                </div>
+            </button>
+            <button type="button" class="capa" data-alvo="linha-shox">
+                <img src="imagens/ShoxTL.png" alt="">
+                <div class="capa-info">
+                    <h3>Shox TL</h3>
                     <p class="capa-qtd"></p>
                 </div>
             </button>
@@ -286,25 +312,42 @@
             </div>
         </section>
 
-        <section class="categoria categoria-fixa" id="linha-outros">
+        <section class="categoria" id="linha-airforce" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
             <div class="categoria-titulo">
-                <h2>Outros modelos</h2>
+                <h2>Air Force</h2>
             </div>
             <div class="grid">
                 <article class="card">
-                    <img src="imagens/AirForce.png" alt="Air Force">
+                    <img src="imagens/AirForce.png" alt="AirForce">
                     <div class="info">
-                        <h3>Air Force</h3>
+                        <h3>Air Force Preto</h3>
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
+            </div>
+        </section>
+        <section class="categoria" id="linha-asics" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
+            <div class="categoria-titulo">
+                <h2>Asics</h2>
+            </div>
+            <div class="grid">
                 <article class="card">
-                    <img src="imagens/AsicsGelNYC.png" alt="Asics Gel NYC">
+                    <img src="imagens/AsicsGelNYC.png" alt="Asics">
                     <div class="info">
                         <h3>Asics Gel NYC</h3>
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
+            </div>
+        </section>
+        <section class="categoria" id="linha-mizuno" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
+            <div class="categoria-titulo">
+                <h2>Mizuno</h2>
+            </div>
+            <div class="grid">
                 <article class="card">
                     <img src="imagens/Mizuno.png" alt="Mizuno">
                     <div class="info">
@@ -312,15 +355,24 @@
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
+            </div>
+        </section>
+        <section class="categoria" id="linha-shox" hidden>
+            <button type="button" class="voltar">← Voltar às coleções</button>
+            <div class="categoria-titulo">
+                <h2>ShoxTL</h2>
+            </div>
+            <div class="grid">
                 <article class="card">
-                    <img src="imagens/ShoxTL.png" alt="Shox TL">
+                    <img src="imagens/ShoxTL.png" alt="ShoxTL">
                     <div class="info">
-                        <h3>Shox TL</h3>
+                        <h3>ShoxTL</h3>
                         <p class="preco">R$ 000,00</p>
                     </div>
                 </article>
             </div>
         </section>
+    
     </main>
 
     <footer id="contatos">

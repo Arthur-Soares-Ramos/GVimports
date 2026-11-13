@@ -1,13 +1,10 @@
-// Número da loja: 55 + DDD + número (somente dígitos)
 var NUMERO_WHATSAPP = "5534996398705";
 
-/* ============ COLEÇÃO: capas -> linha ============ */
 var capas = document.getElementById("capas");
-var linhas = document.querySelectorAll(".categoria");               // todas (usado no pedido)
-var linhasAbriveis = document.querySelectorAll(".categoria:not(.categoria-fixa)"); // abrem ao clicar na capa
-var fixas = document.querySelectorAll(".categoria-fixa");           // sempre visíveis na lista
+var linhas = document.querySelectorAll(".categoria");               
+var linhasAbriveis = document.querySelectorAll(".categoria:not(.categoria-fixa)"); 
+var fixas = document.querySelectorAll(".categoria-fixa");           
 
-// Preenche "X modelos" em cada capa automaticamente
 document.querySelectorAll(".capa").forEach(function (capa) {
   var linha = document.getElementById(capa.dataset.alvo);
   var qtd = linha.querySelectorAll(".card").length;
@@ -38,7 +35,6 @@ function fecharLinhas() {
   document.getElementById("tenis").scrollIntoView({ behavior: "smooth" });
 }
 
-/* ============ PEDIDO: linha -> modelo -> tamanho ============ */
 var TAMANHOS = [36, 37, 38, 39, 40, 41, 42, 43, 44, 45];
 var MAX_ITENS = 10;
 
@@ -140,7 +136,6 @@ function adicionarItem() {
   atualizarItens();
 }
 
-// Renumera os itens e controla botões de remover/adicionar
 function atualizarItens() {
   var lista = itens.children;
   for (var i = 0; i < lista.length; i++) {
@@ -151,7 +146,7 @@ function atualizarItens() {
 }
 
 btnAdd.addEventListener("click", adicionarItem);
-adicionarItem(); // começa com um tênis
+adicionarItem(); 
 
 document.getElementById("formPedido").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -164,8 +159,8 @@ document.getElementById("formPedido").addEventListener("submit", function (e) {
   });
 
   var mensagem =
-    "Olá! Tenho interesse nos seguintes tênis da GV Imports:\n\n" +
-    linhasPedido.join("\n") + "\n\n" +
+    "Olá! Tenho interesse nos seguintes tênis da GV Imports:\n" +
+    linhasPedido.join("\n") + "\n" +
     "Pode me passar mais informações?";
 
   var url = "https://wa.me/" + NUMERO_WHATSAPP + "?text=" + encodeURIComponent(mensagem);
