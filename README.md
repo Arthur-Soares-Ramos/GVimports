@@ -20,10 +20,6 @@ Adicionar linha de tenis (dentro da div capas)
                 </div>
             </button>
 Adicionar tenis dentro da linha(depois do ultimo tenis da liha na div grid da section categoria)
-            <article class="card">
-                    <img src="imagens/NikeSBTwistPanda.png" alt="Nike SB Twist Panda">
-                    <div class="info">
-                        <h3>Nike SB Twist "Panda"</h3>
-                        <p class="preco">R$ 000,00</p>
-                    </div>
-                </article>
+            
+Tenis que estão fora do site por enquanto
+                
